@@ -1,7 +1,35 @@
-library info_x;
+import 'package:info_x/sunny_localization.dart';
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
+import 'device_info.dart';
+import 'sunny_get.dart';
+
+export 'device_info.dart';
+export 'sunny_get.dart';
+export 'sunny_localization.dart';
+
+InfoX get infoX => sunny.get();
+
+abstract class InfoX {
+  Future<SunnyLocalization> initializeLocalization();
+  Future<DeviceInfo> loadDeviceInfo();
+  Future<DeviceInfo> get deviceInfo;
+  Future<String> get currentTimeZone;
+
+  bool get isIOS;
+
+  bool get isAndroid;
+
+  bool get isMacOS;
+
+  bool get isWindows;
+
+  bool get isLinux;
+
+  bool get isWeb;
+
+  String get operatingSystem;
+
+  Map<String, String> get environment;
+
+  bool get canReadFiles;
 }

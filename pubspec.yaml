@@ -7,7 +7,7 @@ environment:
   flutter: '>=1.17.0'
 dependencies: 
   timezone: ^0.7.0-nullsafety.0
-  dartxx: ^0.4.5-nullsafety.4
+  dartxx: ^0.4.5-nullsafety.6
   flutter: 
     sdk: flutter
 dev_dependencies: 

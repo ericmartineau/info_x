@@ -1,3 +1,6 @@
+## [0.6.0+1]
+ * Updated dependencies
+
 ## [0.5.0+1]
  * Minor bump
 

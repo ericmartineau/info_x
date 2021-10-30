@@ -1,3 +1,6 @@
+## [0.8.0+2]
+ * Updating deps
+
 ## [0.7.0+1]
  * Updated dependencies
 

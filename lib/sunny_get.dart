@@ -3,12 +3,15 @@
 abstract class SunnyGet {
   T call<T>();
   T get<T>({dynamic context, String? name});
+  T? find<T extends Object>({dynamic context, String? name}) => call<T>();
 }
 
 class _NullSunnyGet implements SunnyGet {
   const _NullSunnyGet();
   @override
   T get<T>({dynamic context, String? name}) => call<T>();
+  T? find<T extends Object>({dynamic context, String? name}) => null;
+
   @override
   T call<T>() =>
       throw "No SunnyGet registered. Your application must register a SunnyGet to be able to resolve core services";

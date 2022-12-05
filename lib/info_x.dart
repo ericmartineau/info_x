@@ -1,6 +1,7 @@
 import 'package:info_x/sunny_localization.dart';
 
 import 'device_info.dart';
+import 'package:flutter/widgets.dart';
 import 'sunny_get.dart';
 
 export 'device_info.dart';
@@ -32,4 +33,9 @@ abstract class InfoX {
   Map<String, String> get environment;
 
   bool get canReadFiles;
+
+  /// This can be different from the OS.  For example, you could have a mobile
+  /// safari browser on mobile/Android, or mobile/ios, or a responsive "mobile"
+  /// view on macos through a browser (which should render a ios)
+  TargetPlatform targetPlatform(BuildContext context);
 }

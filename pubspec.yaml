@@ -5,9 +5,9 @@ description: A new Flutter package project.
 environment: 
   sdk: '>=2.14.0 <3.0.0'
 dependencies: 
-  timezone: ^0.8.0
-  dartxx: 
-    path: /Users/ericm/sunny/local_plugins/dartxx
+  timezone: ^0.9.0
+  dartxx:
+    path: /Users/ericm/reliveit/checkout/ericmartineau/dartxx
   flutter: 
     sdk: flutter
 dev_dependencies: 

@@ -1,3 +1,4 @@
+import 'package:flutter/widgets.dart';
 import 'package:info_x/sunny_localization.dart';
 
 import 'device_info.dart';

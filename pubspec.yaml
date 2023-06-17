@@ -7,7 +7,7 @@ environment:
 dependencies: 
   timezone: ^0.9.1
   dartxx: 
-    path: /Users/ericm/reliveit/checkout/ericmartineau/dartxx
+    path: /Users/ericm/aesthetika/checkout/ericmartineau/dartxx
   flutter: 
     sdk: flutter
 dev_dependencies: 
